@@ -16,7 +16,7 @@ const updateDB = async () => {
       if (!country.capital || country.capital.length === 0) {
         capital = "unknown";
       } else {
-        capital = country.capital[0];
+        capital = country.capital.join(", ");
       }
 
       return {
